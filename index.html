@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="jumbotron py-4">
+    <h1 class="display-4  d-flex justify-content-center">Giphy Party!</h1>
+    <p class="lead d-flex justify-content-center">Search for your favorite GIF's</p>
+    <hr class="my-4">
+    <div class="container">
+      <form id="form" action="">
+        <label for="search-input">Search: </label>
+        <input id="search-input" class="form-control mb-3" type="text" placeholder="This is fine">
+        <input id="search-btn" class="btn btn-primary" type="submit" value="Search">
+        <button type="button" id="clear-btn" class="btn btn-danger">Clear GIF's</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="gif-container" class="container">
+
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
